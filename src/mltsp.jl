@@ -137,7 +137,7 @@ println("Arcs with capacity: ")
 for i = range
     for j = range
         if value(x[i, j]) > 0.0
-            println(string(floor(c[i]), "->", floor(c[j]), "[label=", floor(value(y[i, j])), "]")) # you can use graphviz to visualize this
+            println(string('"',i, '|',round(c[i]), '"', "->", '"',j, '|',round(c[j]), '"', "[label=", round(value(y[i, j])), "]")) # you can use graphviz to visualize this
         end
     end
 end
